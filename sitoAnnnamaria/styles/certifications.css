@@ -1,0 +1,31 @@
+h1{
+  background-image:var(--background-button-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.card{
+  width: 70%;
+  margin: 5% 10%;
+  -webkit-box-shadow: var(--shadow);
+  -moz-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+:root{
+  --background-button-color:linear-gradient(90deg, #72ace9, #5558b6);
+  --shadow:5px 5px 5px #dcdcdc;
+}

@@ -1,0 +1,127 @@
+/*WHATAPP PULSE*/
+.btn-whatsapp-pulse {
+	background: #5dba76;
+	color: white;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0;
+	height: 0;
+	padding: 35px;
+	text-decoration: none;
+	border-radius: 50%;
+	animation: pulse 2s  infinite;
+
+}
+.whatsapp {
+  display: block;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+	}
+	50% {
+		box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+	}
+  100% {
+		box-shadow: 0 0 0 35px rgba(37, 211, 102, 0);
+	}
+}
+
+
+
+/*MENU*/
+.menu{
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	color: #000;
+	text-decoration: none;
+	align-items: center;
+	justify-content:space-between;
+	-webkit-box-shadow: 5px 5px 5px #dcdcdc;
+	-moz-box-shadow: 5px 5px 5px #dcdcdc;
+	box-shadow: 5px 5px 5px #dcdcdc;
+	text-decoration: none;
+  z-index:-1;
+  overflow: hidden;
+}
+
+.active{
+	color: #00FFB6;
+	cursor: pointer;
+	text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 0 4%;
+}
+.noneActive{
+	color: #000;
+  cursor: pointer;
+	text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 0 4%;
+  background-image:linear-gradient( transparent 0%,transparent 90% ,hotpink 90%,hotpink 100%);
+  background-repeat:no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 300ms;
+}
+
+.nav-menu a:hover {
+  background-size: 100% 100%;
+  background-position-x: left;
+}
+
+.menu > div > a{
+float: left;
+padding: 12px;
+color: white;
+font-size: 1.063em;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 800px) {
+	.menu{
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.menu > div > a {
+		float: none;
+		display: block;
+	}
+}
+
+
+/*FOOTER*/
+.copyright{
+  padding: 0.5%;
+  font-size: 75%;
+  color: grey;
+  background-color: #e1ebea;
+}
+
+li.copyright-list {
+  font-size:100%;
+  display:inline-block;
+  font-family: sans-serif;
+  margin: 0 3%;
+}
+
+nav.footer{
+  display: inline-block;
+}
+
+li.privacy{
+	cursor: pointer;
+	color: #000;
+	text-decoration: none;
+}
