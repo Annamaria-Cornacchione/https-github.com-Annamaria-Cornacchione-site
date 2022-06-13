@@ -41,7 +41,6 @@
 	background-color: white;
 	padding: 20px;
 	display: flex;
-
 	text-decoration: none;
 	align-items: center;
 	justify-content:space-between;
@@ -119,11 +118,14 @@ nav.footer{
 }
 
 li.privacy{
-	cursor: pointer;
 	color: #000;
-	text-decoration: none;
+	font-weight: bold;
 }
 
+a{
+  text-decoration: none;
+  color: var(--button-text-color);
+}
 
 :root{
 	--background-color-hover:#B2A9CB;

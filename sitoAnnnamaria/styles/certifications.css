@@ -20,11 +20,11 @@ nav{
   box-shadow: var(--shadow);
   justify-content: center;
   align-items: center;
-  font-size: .8rem;
+  font-size: 1rem;
   column-gap:.5rem;
   display: flex;
   width: 70vw;
-  padding: .5rem;
+  padding: .5rem .5rem 5rem .5rem;
   margin: 1rem 0 10rem 0;
   border-radius:.5rem;
   transition: .2s;
@@ -37,6 +37,13 @@ nav{
   padding: 0;
   box-sizing: border-box;
 }
+
+time{
+  font-size: var(--normal-font-size);
+  font-family: 'Poppins', sans-serif;
+  transition: 1s;
+}
+
 .timeline ul li {
   list-style-type: none;
   position: relative;
@@ -61,8 +68,8 @@ nav{
 .timeline ul li div {
   position: relative;
   bottom: 0;
-  width: 25vw;
-  padding: .5rem;
+  width: 20vw;
+  padding: 1.5rem;
   border-radius:.5rem;
   transition: .2s;
   background: var(--background-gapTimeline-color-);
@@ -88,7 +95,7 @@ nav{
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -400px;
+  left: -330px;
 }
 
 .timeline ul li:nth-child(even) div::before {
@@ -105,8 +112,8 @@ nav{
   background: linear-gradient(to right,#070092 33.33%, #F1F2F1 33.33%, #F1F2F1 66.66%, #CE2B37 66.66%);
 }
 
-.englandFlag:before {
-  position: absolute;
+.englandFlag{
+  position: relative;
   content: "";
   background:
               linear-gradient(to bottom, transparent 40%, #CC142B 40%, #CC142B 60%, transparent 60%),
@@ -126,10 +133,19 @@ nav{
   margin: 1rem 0rem;
   background-repeat: no-repeat;
 }
+
 :root{
   --background-button-color:linear-gradient(90deg, #72ace9, #5558b6);
   --background-timeline-color:linear-gradient(40deg, #72ace9, #5558b6);
   --background-gapTimeline-color-:#f5f2f3;
   --arrow-color: #f5f2f3;
   --shadow: 3px 4px 3px 3px  #dcdcdc;
+  --normal-font-size:2rem;
+}
+
+@media screen and (max-width: 800px) {
+  :root{
+    --normal-font-size:1rem;
+
+  }
 }
