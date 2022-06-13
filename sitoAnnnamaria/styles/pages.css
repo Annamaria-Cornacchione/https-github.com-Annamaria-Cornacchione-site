@@ -37,72 +37,70 @@
 
 /*MENU*/
 .menu{
+	margin-bottom: 5%;
 	background-color: white;
 	padding: 20px;
 	display: flex;
-	color: #000;
+
 	text-decoration: none;
 	align-items: center;
 	justify-content:space-between;
-	-webkit-box-shadow: 5px 5px 5px #dcdcdc;
-	-moz-box-shadow: 5px 5px 5px #dcdcdc;
-	box-shadow: 5px 5px 5px #dcdcdc;
+	-webkit-box-shadow: var(--shadow);
+	-moz-box-shadow: var(--shadow);
+	box-shadow: var(--shadow);
 	text-decoration: none;
   z-index:-1;
   overflow: hidden;
 }
 
 .active{
-	color: #00FFB6;
+	color: #72ace9;
 	cursor: pointer;
 	text-decoration: none;
-  font-size: 20px;
   font-family: sans-serif;
   margin: 0 4%;
 }
 .noneActive{
-	color: #000;
+	color: #5558b6;
   cursor: pointer;
 	text-decoration: none;
-  font-size: 20px;
   font-family: sans-serif;
   margin: 0 4%;
-  background-image:linear-gradient( transparent 0%,transparent 90% ,hotpink 90%,hotpink 100%);
+  background-image:linear-gradient( transparent 0%,transparent 90% ,var(--background-color-hover) 90%,var(--background-color-hover) 100%);
   background-repeat:no-repeat;
   background-size: 0% 100%;
   background-position-x: right;
   transition: background-size 300ms;
 }
 
+.nav-menu {
+	display: flex;
+	font-size: 1.2rem;
+}
 .nav-menu a:hover {
   background-size: 100% 100%;
   background-position-x: left;
 }
 
 .menu > div > a{
-float: left;
-padding: 12px;
-color: white;
-font-size: 1.063em;
+	float: left;
+	padding: 12px;
+	color: white;
+	font-size: 1.063em;
 }
 
 /* RESPONSIVE */
 @media screen and (max-width: 800px) {
 	.menu{
-		justify-content: center;
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.menu > div > a {
-		float: none;
-		display: block;
+		font-size: .5rem;
+		transition: 2s;
 	}
 }
 
 
 /*FOOTER*/
 .copyright{
+	margin-top: 15rem;
   padding: 0.5%;
   font-size: 75%;
   color: grey;
@@ -124,4 +122,11 @@ li.privacy{
 	cursor: pointer;
 	color: #000;
 	text-decoration: none;
+}
+
+
+:root{
+	--background-color-hover:#B2A9CB;
+
+  --shadow: 5px 5px 5px  #dcdcdc;
 }
